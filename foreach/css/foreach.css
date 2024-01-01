@@ -1,0 +1,54 @@
+.sub-menu{
+    display: none;
+}
+/* حالایه کلاس برای نمایش می نویسیم 
+ */
+ .show-submenu{
+     display: block;
+ }
+ .item{
+     /* فقط روی لینک نباید کلیک کنی چون خودش یه رویداد کلیک داره برای اینکه اون رو برداری باید خاصیت href اون پاک کنی */
+     cursor: pointer;
+ }
+ .menu{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     list-style: none;
+     padding: 10px 0px;
+     background-color: rgb(253, 236, 238);
+ }
+ li{
+     font-size: 25px;
+     font-weight: 400;
+     color: darkgreen;
+ }
+ .menu>li{
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+    
+    padding: 10px 0px;
+   border: 1px solid grey;
+/* position: relative; */
+ }
+
+ .item .sub-menu{
+  margin-right: 7%;
+  padding: 0px 0px;
+  background-color: rgb(111, 116, 119);
+margin-right: 0;
+list-style: none;
+
+ }
+ .sub-menu li{
+     padding: 20px 0px;
+     border-bottom: 2px solid gray;
+     width: 100%;
+ }
+ 
+ .menu-icon{
+     position: absolute;
+     right:52%;
+    
+ }

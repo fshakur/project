@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+direction: rtl;    
+}
+@font-face {
+    font-family: iransans;
+    src: url(../font/fonts/IRANSans/woff/IRANSansWeb_Light.woff);
+}
+body{
+    font-family: iransans;
+}
+.icon-bar{
+    width: 100px;
+    height: 100px;
+}
+ .menu{
+    position: fixed;
+    /* margin-top: 60px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: none;
+    /* فهمیدی چی شدآره  وقتی منو میاد اون آیکون بار محو میشه محو نمیشه منو میاد روی اون ف اها باهمین زدایندکس گرفتم */
+    top: 0;
+    /* الان بهترشد ببین چون منو افتاده زیر می تونیم با این کد بیاریمش بالا یه لحظه صبر کن لطفا */
+    z-index: 2;
+    /*  با z ایندکس تفاوتی تو ظاهر به وجود نمیاد درسته؟
+    نه فقط الان نسبت به ایکن میاد بالا  باشه
+*/
+    /* flex-direction: column; */
+    background-color: rgb(121, 111, 111);
+  /* right: 50px; */
+}
+li{ margin-bottom: 10px;
+    display: flex;
+
+    list-style: none;
+    margin: 30px;
+}
+a{ 
+    text-decoration: none;
+    color: black;
+}
+.icon
+{
+  /* margin-right: 40px; */
+  /* margin-top: 60px; */
+    position: relative;
+    /* right: -35px; */
+    /* top: -20px; */
+    font-size: 50px;
+    color: gray;
+    display: block;
+    cursor: pointer;
+    
+}
+/* .hide-menu
+{
+    position: absolute;
+    top:-20px;
+} */
+.show-menu{
+    display: block;
+}
+/* @media screen and (min-width: 500px) {
+    .icon{
+        display: block
+    }
+    .menu{
+         display: none; 
+        flex-direction: column;
+        width: 100%;
+       height: auto;
+       position: fixed;
+    }
+    li{
+        margin: 13px;
+    }
+    
+} */
+.close{
+    position: absolute;
+    left: 0;
+    /* margin-right: 440px; */
+    /* ببین واسه اینکه یه ایکن یا هرعنصری رو نسبت به عنصر دیگه بسنجی میای والدش  پوزیشن غیراستاتیک میدی اینجا چون خودش فیکس بودما ندادیم  */
+    /* بعد ازاین کار با top,left,botom,right نسبت به اون عنصرتنظیمش میکنیم */
+    /* سوالی نداری زندگی  نه عزیزم مرسی که وقت گذاشتی اوکی یه مرور بکن من برم چای بخورم میامباش بای */
+}
